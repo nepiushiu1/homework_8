@@ -1,0 +1,19 @@
+/*logo*/
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--accent-cl);
+}
+.logo-header {
+  margin-right: 93px;
+}
+.logo-black {
+  color: rgb(0, 0, 0);
+}
+.logo-white {
+  color: rgb(255, 255, 255);
+}

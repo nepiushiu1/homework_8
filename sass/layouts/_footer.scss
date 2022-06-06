@@ -1,0 +1,139 @@
+/*footer*/
+.footer {
+  background-color: rgb(47, 48, 58);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.conteiner-footer {
+  display: flex;
+  align-items: baseline;
+}
+.footer-iogo {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-item {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.address {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgb(255, 255, 255);
+  font-style: normal;
+  text-decoration: dashed;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+}
+.footer-contacts {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  text-decoration: dashed;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+}
+
+.title-footer {
+  font-family: "Roboto";
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.footer-icons {
+  margin-left: 70px;
+}
+.item-footer-icons {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.list-footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.link-footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(67, 68, 77, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(33, 150, 243, 1);
+  }
+}
+
+.footer-icon {
+  fill: rgba(255, 255, 255, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription {
+  margin-left: auto;
+}
+.subscription-footer {
+  display: flex;
+  margin-top: 20px;
+}
+.subscription-window {
+  display: flex;
+}
+.subscription-footer input {
+  width: 358px;
+
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  border-radius: 4px;
+  margin-right: 11px;
+}
+.subscription-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: rgb(255, 255, 255);
+  border-style: none;
+  padding: 10px 28px;
+  background-color: rgb(33, 150, 243);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.button-logo-fotter {
+  margin-left: 10px;
+}

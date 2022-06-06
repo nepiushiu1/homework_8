@@ -1,0 +1,37 @@
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__item {
+    margin-right: 10px;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+}
+
+.social-media-icons__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(33, 150, 243, 1);
+  }
+}
+
+.social-media-icons__icon {
+  fill: rgba(175, 177, 184, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-media-icons__link:hover .social-media-icons__icon,
+.social-media-icons__link:focus .social-media-icons__icon {
+  fill: rgba(255, 255, 255, 1);
+}

@@ -1,0 +1,38 @@
+/*section-4-our-team*/
+.team {
+  background: rgba(245, 244, 250, 1);
+}
+.our-team {
+  display: flex;
+}
+.our-team-item {
+  width: 270px;
+  margin-right: 30px;
+  background-color: rgba(255, 255, 255, 1);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.our-team-item__employee {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.our-team-item__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt-cl);
+
+  margin-bottom: 10px;
+}
+.our-team-item__position {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
