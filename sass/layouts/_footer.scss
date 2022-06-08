@@ -4,20 +4,49 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .conteiner-footer {
-  display: flex;
-  align-items: baseline;
+  @include mq(desktop) {
+    display: flex;
+    align-items: baseline;
+  }
 }
-.footer-iogo {
-  display: block;
-  margin-bottom: 20px;
+.contacts-tablet {
+  @include mq(tablet) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
 }
-.footer-item {
-  margin-bottom: 9px;
 
-  &:last-child {
-    margin-bottom: 0;
+.footer-iogo {
+  @include mq(mobile-only) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @include mq(desktop) {
+    display: block;
+  }
+}
+
+.footer-list {
+  margin-top: 20px;
+
+  @include mq(mobile-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer-item :not(:last-child) {
+  @include mq(mobile) {
+    margin-bottom: 8px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 9px;
   }
 }
 
@@ -59,10 +88,25 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
+
+  @include mq(not-desktop) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer-icons {
-  margin-left: 70px;
+  @include mq(mobile-only) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  @include mq(desktop) {
+    margin-left: 70px;
+  }
 }
 .item-footer-icons {
   margin-right: 10px;
@@ -100,23 +144,40 @@
 }
 
 .subscription {
-  margin-left: auto;
+  @include mq(desktop) {
+    margin-left: auto;
+  }
 }
 .subscription-footer {
-  display: flex;
-  margin-top: 20px;
+  @include mq(not-desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include mq(desktop) {
+    display: flex;
+    margin-top: 20px;
+  }
 }
 .subscription-window {
-  display: flex;
+  @include mq(desktop) {
+    display: flex;
+  }
 }
 .subscription-footer input {
-  width: 358px;
-
   padding: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
   border-radius: 4px;
-  margin-right: 11px;
+  @include mq(not-desktop) {
+    width: 450px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @include mq(desktop) {
+    width: 358px;
+    margin-right: 11px;
+  }
 }
 .subscription-btn {
   font-weight: 700;
