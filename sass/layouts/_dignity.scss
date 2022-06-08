@@ -1,16 +1,37 @@
 /*section-2-dignity*/
 .dignity-section {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include mq(desktop) {
+    padding-top: 94px;
+  }
 }
 .dignity-list {
-  display: flex;
-}
-.dignity-list__item {
-  margin-right: 30px;
-  width: 270px;
+  @include mq(tablet-only) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    .dignity-list__item {
+      width: 354px;
+    }
+  }
 
-  &:last-child {
-    margin-right: 0;
+  @include mq(desktop) {
+    display: flex;
+
+    .dignity-list__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    .dignity-list__item {
+      margin-right: 30px;
+      width: 270px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 }
 
@@ -23,6 +44,10 @@
   color: var(--secondary-txt-cl);
   margin-top: 30px;
   margin-bottom: 10px;
+
+  @include mq(mobile-only) {
+    text-align: center;
+  }
 }
 
 .dignity-list__description {

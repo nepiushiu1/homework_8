@@ -1,18 +1,18 @@
 /*section-5-clients*/
 .clients {
   display: flex;
+  @include mq(not-desktop) {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
-
-.clients__item {
-  margin-right: 30px;
-
-  &:last-child {
-    margin-right: 0;
+@include mq(desktop) {
+  .clients__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
 .clients__link {
-  width: 170px;
   height: 92px;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
@@ -24,6 +24,15 @@
   &:hover,
   &:focus {
     border: 1px solid rgba(33, 150, 243, 1);
+  }
+  @include mq(mobile) {
+    width: 210px;
+  }
+  @include mq(tablet) {
+    width: 226px;
+  }
+  @include mq(desktop) {
+    width: 170px;
   }
 }
 
