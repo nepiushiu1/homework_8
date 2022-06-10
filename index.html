@@ -27,6 +27,95 @@
         <a href="./index.html" class="logo logo-header"
           >Web<span class="logo-black">Studio</span></a
         >
+        <!--dropdown-button-->
+        <button
+          type="button"
+          class="dropdown-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="24"
+            height="16"
+            aria-label="переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu_24"
+              href="./images/sprite.svg#icon-menu_24px"
+            ></use>
+            <use
+              class="icon-close_24"
+              href="./images/sprite.svg#icon-close_24px"
+            ></use>
+          </svg>
+        </button>
+
+        <!--navigation-for-mobile-->
+        <div class="navigation-for-mobile" id="menu-container" data-menu>
+          <nav class="navigation-for-mobile__nav">
+            <ul class="list navigation-for-mobile__list">
+              <li class="navigation-for-mobile__item">
+                <a
+                  class="active navigation-for-mobile__link"
+                  href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="navigation-for-mobile__item">
+                <a class="navigation-for-mobile__link" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation-for-mobile__item">
+                <a class="navigation-for-mobile__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <ul class="list mobile-contacts">
+              <li class="mobile-contacts__item">
+                <a class="mobile-contacts__link--tel" href="tel:+380961111111">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-contacts__item">
+                <a
+                  class="mobile-contacts__link--mail"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="list mobile-social-networks">
+              <li class="mobile-social-networks__item">
+                <a
+                  class="mobile-social-networks__link mobile-social-networks__link--after"
+                  href=""
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-social-networks__item">
+                <a
+                  class="mobile-social-networks__link mobile-social-networks__link--after"
+                  href=""
+                  >Twitter</a
+                >
+              </li>
+              <li class="mobile-social-networks__item">
+                <a
+                  class="mobile-social-networks__link mobile-social-networks__link--after"
+                  href=""
+                  >Facebook</a
+                >
+              </li>
+              <li class="mobile-social-networks__item">
+                <a class="mobile-social-networks__link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <!--navigation-->
         <nav class="header-nav">
           <ul class="header-nav-list list">
@@ -42,7 +131,7 @@
           </ul>
         </nav>
         <ul class="list contacts-list">
-          <li class="header-item">
+          <li class="header-item header-item-tablet">
             <a class="contacts" href="mailto:info@devstudio.com"
               ><svg class="header-icons" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use>
@@ -50,7 +139,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="header-item">
+          <li class="header-item header-item-tablet">
             <a class="contacts" href="tel:+380961111111"
               ><svg class="header-icons" width="10" height="16">
                 <use href="./images/sprite.svg#icon-Vector"></use>
