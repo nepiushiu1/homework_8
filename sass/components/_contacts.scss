@@ -31,4 +31,7 @@
 .header-icons {
   margin-right: 10px;
   fill: currentColor;
+  @include mq(tablet-only) {
+    margin-right: 8px;
+  }
 }

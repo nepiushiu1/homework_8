@@ -375,7 +375,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
+  width: 100%;
   background-color: white;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -386,6 +386,18 @@ body {
   transition: -webkit-transform 400ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
   transition: transform 400ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
   transition: transform 400ms cubic-bezier(0.17, 0.67, 0.83, 0.67), -webkit-transform 400ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+@media screen and (min-width: 480px) {
+  .modal-wrapper {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-wrapper {
+    width: 528px;
+  }
 }
 
 .form-modal {
@@ -424,10 +436,16 @@ body {
 .form-name {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-name {
+    line-height: 1.15;
+  }
 }
 
 .user-data {
@@ -532,10 +550,17 @@ textarea::placeholder {
 }
 
 .checkbox-text {
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  font-size: 12px;
+  line-height: 1.16;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .register-btn {
@@ -646,14 +671,34 @@ textarea::placeholder {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header-icons {
+    margin-right: 8px;
+  }
+}
+
 .button-portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 34px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .button-portfolio {
+    margin-bottom: 14px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-portfolio {
+    margin-bottom: 34px;
+  }
 }
 
 .button-portfolio .item {
@@ -681,6 +726,7 @@ textarea::placeholder {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 15px;
 }
 
 .btn-portfolio:hover, .btn-portfolio:focus {
@@ -730,6 +776,17 @@ textarea::placeholder {
   margin-right: 50px;
 }
 
+.header-item-tablet:not(:last-child) {
+  margin-right: 50px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header-item-tablet:not(:last-child) {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+
 .page-nav {
   display: block;
   font-weight: 500;
@@ -767,20 +824,50 @@ textarea::placeholder {
 
 /*section-1*/
 .section-one {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
   background-repeat: no-repeat;
-  background-size: 1600px 600px;
   background-position: 50% 50%;
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mob-img.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob-img.jpg);
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-one {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mob-img@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob-img@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-one {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tab-img.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tab-img.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section-one {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tab-img@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tab-img@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .section-one {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-size: 1600px 600px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section-one {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img@2x.jpg);
   }
 }
 
@@ -1412,26 +1499,48 @@ textarea::placeholder {
 }
 
 /*portfolio*/
-.list-portfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .list-portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .list-portfolio .item {
-  width: 370px;
-  margin-right: 30px;
+  max-width: 450px;
   margin-bottom: 30px;
 }
 
-.list-portfolio .item:nth-child(3n) {
-  margin-right: 0;
+.list-portfolio .item:last-child {
+  margin-bottom: 0;
 }
 
-.list-portfolio .item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
+@media screen and (min-width: 768px) {
+  .list-portfolio .item {
+    width: 354px;
+    margin-right: 30px;
+  }
+  .list-portfolio .item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .list-portfolio .item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-portfolio .item {
+    width: 370px;
+  }
+  .list-portfolio .item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .list-portfolio .item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
 }
 
 .link-portfolio {
