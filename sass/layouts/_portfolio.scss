@@ -12,7 +12,7 @@
   &:last-child {
     margin-bottom: 0;
   }
-  @include mq(tablet) {
+  @include mq(tablet-only) {
     width: 354px;
     margin-right: 30px;
     &:nth-child(2n) {

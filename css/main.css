@@ -1518,7 +1518,7 @@ textarea::placeholder {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .list-portfolio .item {
     width: 354px;
     margin-right: 30px;
