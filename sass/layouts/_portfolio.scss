@@ -59,8 +59,8 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
   background: rgba(33, 150, 243, 0.9);
   border: 1px solid #000000;
 
@@ -76,12 +76,21 @@
 }
 
 .description-projects {
-  width: 322px;
-  height: 168px;
+  width: 402px;
+  height: 140px;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: rgb(255, 255, 255);
+
+  @include mq(tablet) {
+    width: 306px;
+    height: 168px;
+  }
+  @include mq(desktop) {
+    width: 322px;
+    height: 168px;
+  }
 }
 
 .portfolio-projects {

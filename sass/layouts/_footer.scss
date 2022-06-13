@@ -179,6 +179,8 @@
   @include mq(desktop) {
     width: 358px;
     margin-right: 11px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 .subscription-btn {

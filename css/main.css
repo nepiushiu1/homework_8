@@ -859,15 +859,15 @@ textarea::placeholder {
     padding-top: 200px;
     padding-bottom: 200px;
     background-size: 1600px 600px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/title.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/title.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .section-one {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img@2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/title2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/title2x.jpg);
   }
 }
 
@@ -1408,6 +1408,8 @@ textarea::placeholder {
   .subscription-footer input {
     width: 358px;
     margin-right: 11px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1574,8 +1576,8 @@ textarea::placeholder {
   position: absolute;
   left: 0;
   top: 0;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
   background: rgba(33, 150, 243, 0.9);
   border: 1px solid #000000;
   display: -webkit-box;
@@ -1602,12 +1604,26 @@ textarea::placeholder {
 }
 
 .description-projects {
-  width: 322px;
-  height: 168px;
+  width: 402px;
+  height: 140px;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .description-projects {
+    width: 306px;
+    height: 168px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .description-projects {
+    width: 322px;
+    height: 168px;
+  }
 }
 
 .portfolio-projects {
