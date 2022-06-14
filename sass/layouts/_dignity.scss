@@ -5,6 +5,7 @@
 
   @include mq(desktop) {
     padding-top: 94px;
+    padding-bottom: 0;
   }
 }
 .dignity-list {
@@ -20,10 +21,6 @@
   @include mq(desktop) {
     display: flex;
 
-    .dignity-list__item:not(:last-child) {
-      margin-bottom: 30px;
-    }
-
     .dignity-list__item {
       margin-right: 30px;
       width: 270px;
@@ -32,6 +29,13 @@
         margin-right: 0;
       }
     }
+  }
+}
+.dignity-list__item:not(:last-child) {
+  margin-bottom: 30px;
+
+  @include mq(tablet) {
+    margin-bottom: 0;
   }
 }
 
