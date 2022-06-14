@@ -20,7 +20,7 @@
     margin-right: 0;
   }
 }
-.button-portfolio .item--margin {
+.button-portfolio .item:nth-child(-n + 3) {
   @include mq(mobile-only) {
     margin-bottom: 15px;
   }
